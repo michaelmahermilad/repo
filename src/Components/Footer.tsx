@@ -25,7 +25,7 @@ function Footer() {
 				</a>
  
 <a rel="noopener noreferrer" target='_blank' href="https://www.youtube.com/@%D9%83%D9%86%D9%8A%D8%B3%D8%A9%D8%A7%D9%84%D8%B3%D9%8A%D8%AF%D8%A9%D8%A7%D9%84%D8%B9%D8%B0%D8%B1%D8%A7%D8%A1%D9%85%D8%B1%D9%8A%D9%85%D8%A8%D8%A7%D9%84%D9%85%D9%84%D9%8A%D8%AD%D8%A9/featured" title="YouTube" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
     <path d="M23.8 6.4c-.3-1.2-1.2-2-2.4-2.4C19.6 3.2 12 3.2 12 3.2s-7.6 0-9.4.8c-1.2.4-2.1 1.2-2.4 2.4C0 7.6 0 12 0 12s0 4.4.8 5.6c.3 1.2 1.2 2 2.4 2.4 1.8.8 9.4.8 9.4.8s7.6 0 9.4-.8c1.2-.4 2.1-1.2 2.4-2.4.8-1.2.8-5.6.8-5.6s0-4.4-.8-5.6zM9.5 15V9l6 3-6 3z"></path>
   </svg>
 </a>

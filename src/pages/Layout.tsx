@@ -11,8 +11,10 @@ const ZainI = Zain({
   weight: "400",
   subsets: ["arabic"],
 });
-
-const Home = observer(({children}) => {
+interface MyComponentProps {
+  children: React.ReactNode; // Now TypeScript knows children is allowed
+}
+const Home = observer(({children}:MyComponentProps ) => {
   
   return (
     <>
