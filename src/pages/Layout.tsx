@@ -1,0 +1,32 @@
+import Image from "next/image";
+import { Zain } from "next/font/google";
+import Navbar from "@/Components/Navbar";
+import Head from "next/head";
+import { observer } from "mobx-react-lite";
+import languageStore from "@/Mobx/Store/Languagestore";
+import NavbarRed from "@/Components/NavbarRed";
+import Footer from "@/Components/Footer";
+ 
+const ZainI = Zain({
+  weight: "400",
+  subsets: ["arabic"],
+});
+
+const Home = observer(({children}) => {
+  
+  return (
+    <>
+     
+      <div
+        dir={languageStore.language === "ar" ? "rtl" : "ltr"}
+        className={`${ZainI.className}  `}
+      >
+        <Navbar />
+ <NavbarRed/>
+{children}   
+<Footer/>
+   </div> 
+    </>
+  );
+});
+export default Home;

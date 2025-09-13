@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+ 
+body{
+  background-image: url('/background.png');
+  background-size:cover;
+  background-position:left top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed */
+min-height: 110vh;
+}
+
