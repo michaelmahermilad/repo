@@ -77,13 +77,13 @@ function Footer() {
   rel="noopener noreferrer"
   aria-label="Telegram"
   title="Telegram"
-  class="flex items-center justify-center w-10 h-10 rounded-full sm:w-12 sm:h-12 dark:bg-sky-600 dark:text-gray-50 transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-sky-400"
+  className="flex items-center justify-center w-10 h-10 rounded-full sm:w-12 sm:h-12 dark:bg-sky-600 dark:text-gray-50 transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-sky-400"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 32 32"
-    class="w-6 h-6"
+    className="w-6 h-6"
   >
     <path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM23.828 10.406l-2.781 13.109c-0.203 0.922-0.75 1.141-1.516 0.703l-4.188-3.094-2.016 1.938c-0.219 0.219-0.406 0.406-0.828 0.406l0.297-4.234 7.703-6.953c0.328-0.297-0.078-0.469-0.516-0.172l-9.516 5.984-4.109-1.281c-0.891-0.281-0.906-0.891 0.188-1.313l16.078-6.203c0.75-0.281 1.406 0.172 1.156 1.203z"/>
   </svg>
