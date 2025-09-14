@@ -1,10 +1,11 @@
 
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import { on } from 'events';
 const navigation = [
   { name: 'موقع الكنيسة', href: '/church-mother-mary-google-map-location', current: false },
   { name: 'تاريخ الكنيسة', href: '/about', current: false },
@@ -17,12 +18,30 @@ function classNames(...classes: string[]) {
 }
 
 const NavbarRed: React.FC = () => {
+    
+useEffect(() => {
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".headerMain");
+  // Adjust '10' to your desired scroll threshold
+  if (header) {
+    if (window.scrollY>160 ) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+});
+
+  },[])
+
+
     return (
  
-           <Disclosure as="nav" style={{position:"relative", backgroundColor: '#7E1215', paddingInline: '.3rem' ,paddingBlock:"1rem", zIndex:10000,                boxShadow: '3px 7px 10px rgba(0, 0, 0, 0.11)' // Added light shadow
-}} className='w-full
+           <Disclosure as="nav" style={{position:"sticky",top:0, backgroundColor: '#7E1215', paddingInline: '.3rem' ,paddingBlock:"1rem", zIndex:10000,                boxShadow: '3px 7px 10px rgba(0, 0, 0, 0.11)' // Added light shadow
+}} className='w-full headerMain
     '>
-      <div className="mx-auto   px-1 sm:px-4 lg:px-4">
+      <div className="mx-auto   px-1 sm:px-4 lg:px-4 logo">
         <div className="relative flex h-13 items-center justify-between lg:h-9
         ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -30,14 +49,14 @@ const NavbarRed: React.FC = () => {
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="text-[white] block size-6 group-data-open:hidden" />
+              <Bars3Icon aria-hidden="true" className="text-[white] block size-6 group-data-open:hidden " />
               <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
            
             <div className="hidden sm:ml-6 sm:block  mt-1 mb-1">
-              <div className="flex space-x-3 ">
+              <div className="flex space-x-3  ">
                 {navigation.map((item) => (
             
             <Link
@@ -60,10 +79,10 @@ const NavbarRed: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 ">
             <div >
-                <p className='hidden lg:block text-base   text-[white] mx-2 text-[18px]'   >
-مَا أَحْلَى مَسَاكِنَكَ يَا رَبَّ الْجُنُودِ. تَشْتَاقُ نَفْسِي إِلَى دِيَارِ الرَّبّ     </p>
+                <p className='hidden lg:block text-base   text-[white] mx-2 text-[18px] '   >
+.مَا أَحْلَى مَسَاكِنَكَ يَا رَبَّ الْجُنُودِ. تَشْتَاقُ نَفْسِي إِلَى دِيَارِ الرَّبّ     </p>
             </div>
             <button
               type="button"
@@ -71,7 +90,7 @@ const NavbarRed: React.FC = () => {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-7 text-[white]" />
+              <BellIcon aria-hidden="true" className="size-7 text-[white] " />
             </button>
 
             {/* Profile dropdown */}

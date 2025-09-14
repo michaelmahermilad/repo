@@ -21,7 +21,7 @@ const Home = observer(({children}:MyComponentProps ) => {
      
       <div
         dir={languageStore.language === "ar" ? "rtl" : "ltr"}
-        className={`${ZainI.className}  `}
+        className={`${ZainI.className} relative `}
       >
         <Navbar />
  <NavbarRed/>
