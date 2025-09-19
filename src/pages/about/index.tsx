@@ -6,9 +6,9 @@ export default function About() {
   return (
     <div>
 
-      <p className='text-center text-[20px] lg:text-[22px] font-bold  my-5'>خدمات الكنيسة</p>
-            <Image src={anba_athanasius} alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
-      <p className='text-center text-[16px] lg:text-[18px] my-5'>برعاية الانبا اثانسيوس - اسقف عام كنائس القبة</p>
+      <p className='text-center text-[20px] lg:text-[22px] font-bold  my-5'>تاريخ الكنيسة</p>
+            <Image src={icon} alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
+      <p className='text-center text-[16px] lg:text-[18px] my-5 mb-[19rem]'>هذه الصفحة قيد الانشاء</p>
     </div>
   );
 }

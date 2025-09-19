@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import logo from './logo.png'
 
 function Footer() {
   return (<>
@@ -8,12 +10,13 @@ function Footer() {
     <footer className=" bottom-0 left-0 w-full text-[#eeebca] bg-[#7e1215] p-4  ">
 	<div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row dark:divide-gray-600">
 		<ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-			<li><a>خدمات كنسية</a></li>
-			<li><a>اباء الكنيسة</a></li>
-			<li><a>تاريخ الكنيسة</a></li>
+			<li><a  href='/services'>خدمات كنسية</a></li>
+			<li><a  href='/church-fathers'>اباء الكنيسة</a></li>
+			<li><a  href='/about'>تاريخ الكنيسة</a></li>
 			<li><a href='/church-mother-mary-google-map-location'>الموقع الجغرافي</a></li>
 		 
  		</ul>
+
 		<div className="flex flex-col justify-center pt-6 lg:pt-0">
 			<div className="flex justify-center space-x-4">
 
@@ -37,7 +40,7 @@ function Footer() {
 </a>
 
 <a
-  href="https://facebook.com" 
+  href="https://www.facebook.com/share/1EqVFcEexw/?mibextid=wwXIfr" 
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Facebook"
@@ -55,7 +58,7 @@ function Footer() {
 </a>
 
 <a
-  href="https://wa.me/1234567890" 
+  href="https://wa.me/201556948100" 
   target="_blank"
   rel="noopener noreferrer"
   aria-label="WhatsApp"
@@ -72,7 +75,7 @@ function Footer() {
   </svg>
 </a>
  <a
-  href="https://t.me/yourusername" 
+  href="https://t.me/stMary2025" 
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Telegram"

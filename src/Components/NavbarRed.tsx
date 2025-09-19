@@ -9,7 +9,7 @@ import { on } from 'events';
 const navigation = [
   { name: 'موقع الكنيسة', href: '/church-mother-mary-google-map-location', current: false },
   { name: 'تاريخ الكنيسة', href: '/about', current: false },
-  { name: 'الاباء الكهنة', href: '#', current: false },
+  { name: 'الاباء الكهنة', href: '/church-fathers', current: false },
   { name: ' الخدمات', href: '/services', current: true },
 ]
 
