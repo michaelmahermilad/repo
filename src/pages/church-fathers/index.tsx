@@ -61,8 +61,8 @@ function index() {
       <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8   ">
         {fathersOfTheChurch.map((father) => (
          <div
-  key={father?.name}
-  className="bg-[#ffffff12] shadow-lg rounded-lg overflow-hidden p-6 border border-gray-200 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[white] hover:border-[white] "
+  key={father?.name} style={{ borderRight: '2px solid #894242ff' }}
+  className="bg-[#ffffff12] shadow-xl   overflow-hidden p-6 border border-gray-200 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]   "
 >
   <h3 className="text-xl font-semibold text-gray-800 text-right">{father.name}</h3>
   <p className="text-gray-600 mt-2 text-right">
