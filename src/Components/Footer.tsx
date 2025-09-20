@@ -95,8 +95,11 @@ function Footer() {
 			</div>
 		</div>
 	</div>
+  
 </footer> 
-
+ <footer className=" text-[#eeebca] bg-[#7e1215] py-6 text-center">
+        <p>&copy; 2025 كنيسة القديسة مريم. جميع الحقوق محفوظة.</p>
+      </footer>
  </>
   )
 }
