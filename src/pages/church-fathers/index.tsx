@@ -53,16 +53,16 @@ function index() {
          <p className='text-center text-[16px] lg:text-[18px] my-10 mt-6 '>برعاية الانبا اثانسيوس - اسقف عام كنائس القبة</p>
 
              <Image src={anba_athanasius} alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
-       <p className='text-center text-[19px] font-bold lg:text-[20px] my-8'>  الاباء الرعاة للكنيسة </p>
+       <p className='text-center text-[19px] font-bold lg:text-[20px] my-7'>  الاباء الرعاة للكنيسة </p>
 
 
-             <div className="container mx-auto px-6 py-8 text-right ">
+             <div className="container mx-auto px-6 py-6 text-right ">
      
-      <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8   ">
+      <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8 pb-9  ">
         {fathersOfTheChurch.map((father) => (
          <div
-  key={father?.name} style={{ borderRight: '2px solid #894242ff' }}
-  className="bg-[#ffffff12] shadow-xl   overflow-hidden p-6 border border-gray-200 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]   "
+  key={father?.name} style={{ borderRight: '3px solid #894242ff', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}
+  className="bg-[#ffffff12] shadow-xl   overflow-hidden p-6 border border-[transparent]  transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]   "
 >
   <h3 className="text-xl font-semibold text-gray-800 text-right">{father.name}</h3>
   <p className="text-gray-600 mt-2 text-right">
