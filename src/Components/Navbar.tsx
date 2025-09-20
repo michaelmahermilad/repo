@@ -4,8 +4,8 @@ import Login from './Login'
 import Themebutton from './Themebutton'
 import Image from 'next/image'
 import banner from './banner.svg'
-import y from './Pope-Tawadros.png'
-import logo from './logo.webp'
+import y from '../../public/Pope-Tawadros.webp'
+import logo from '../../public/logo.webp'
 
 function Navbar() {
   return (
