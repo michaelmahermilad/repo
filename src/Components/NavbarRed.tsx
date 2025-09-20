@@ -1,39 +1,48 @@
 
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useMemo } from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
-import { on } from 'events';
-const navigation = [
-  { name: 'موقع الكنيسة', href: '/church-mother-mary-google-map-location', current: false },
-  { name: 'تاريخ الكنيسة', href: '/about', current: false },
-  { name: 'الاباء الكهنة', href: '/church-fathers', current: false },
-  { name: ' الخدمات', href: '/services', current: true },
-]
+import { useRouter } from 'next/router';
+
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
 const NavbarRed: React.FC = () => {
-    
-useEffect(() => {
+   const router = useRouter();
+  const currentPathname = router.pathname; // This gives you the route path, e.g., /blog/[slug]
+  const asPath = router.asPath; // This gives you the full URL path including query parameters, e.g., /blog/my-post?param=value
+ 
 
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".headerMain");
-  // Adjust '10' to your desired scroll threshold
-  if (header) {
-    if (window.scrollY>160 ) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
+ const handleScroll = useCallback(() => {
+    const header = document.querySelector('.headerMain');
+    if (header) {
+      if (window.scrollY > 160) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
     }
-  }
-});
+  }, []);
 
-  },[])
+   const navigation = [
+      { name: 'موقع الكنيسة', href: '/church-mother-mary-google-map-location', current: currentPathname === '/church-mother-mary-google-map-location' },
+      { name: 'تاريخ الكنيسة', href: '/about', current: currentPathname === '/about' },
+      { name: 'الاباء الكهنة', href: '/church-fathers', current: currentPathname === '/church-fathers' },
+      { name: 'الخدمات', href: '/services', current: currentPathname === '/services' },
+    ]
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
 
 
     return (
