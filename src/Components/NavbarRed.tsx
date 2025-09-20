@@ -6,6 +6,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 
 
@@ -15,8 +16,17 @@ function classNames(...classes: string[]) {
 
 const NavbarRed: React.FC = () => {
    const router = useRouter();
+
+
+   const titles: { [key: string]: string } = {
+  '/about': 'تاريخ الكنيسة',
+  '/services': 'خدمات الكنيسة',
+  '/church-fathers': 'الاباء الكهنة',
+  '/church-mother-mary-google-map-location': 'موقع الكنيسة',
+};
+
   const currentPathname = router.pathname; // This gives you the route path, e.g., /blog/[slug]
-  const asPath = router.asPath; // This gives you the full URL path including query parameters, e.g., /blog/my-post?param=value
+  const pageTitle = titles[currentPathname] || 'موقع الكنيسة';
  
 
  const handleScroll = useCallback(() => {
@@ -50,6 +60,12 @@ const NavbarRed: React.FC = () => {
            <Disclosure as="nav" style={{position:"sticky",top:0, backgroundColor: '#7E1215', paddingInline: '.3rem' ,paddingBlock:"1rem", zIndex:10000,                boxShadow: '3px 7px 10px rgba(0, 0, 0, 0.11)' // Added light shadow
 }} className='w-full headerMain
     '>
+       <Head>
+        <title>{pageTitle} | موقع كنيسة السيدة العذراء</title>
+            
+  <link rel="icon" href="/logo.webp" />
+ 
+      </Head>
       <div className="mx-auto   px-1 sm:px-4 lg:px-4 logo">
         <div className="relative flex h-13 items-center justify-between lg:h-9
         ">
