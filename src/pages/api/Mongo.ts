@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+
 import { MongoClient, ServerApiVersion } from 'mongodb';
 const uri = "mongodb+srv://admin:admin@cluster0.6rjrpru.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
@@ -11,16 +11,4 @@ const client = new MongoClient(uri, {
   }
 });
 
- 
-  client.connect()
-  client.db("admin")
-   type Data = {
-  name: string;
-};
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>,
-) {
-  res.status(200).json({ name: "John Doe" });
-}
+export default client
