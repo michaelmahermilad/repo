@@ -11,12 +11,7 @@ import FR_MINA from './FR_MINA.png'
  import FR_ATHA from './FR_ATHA.png'
 function index() {
   const fathersOfTheChurch = [
-    {
-      name: "أبونا المتنيح القمص قسطنطين موسى",
-      birthDate: "18 مايو 1938 م.",
-      deathDate: "1948 م.",
-      imgsource:""
-    },
+ 
     {
       name: "أبونا القمص مرقس عبد المسيح",
       birthDate: "7 نوفمبر 1969 م.",
@@ -105,11 +100,10 @@ function index() {
           ))}
         </div>
 
+<iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" style={{ border: "1px solid lightgray", width: "90%",margin:"auto", height:"90vh" }} ></iframe>
 
-        
-                        
+                         
       </div>
-
     </div>
   )
 }
