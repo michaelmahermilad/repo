@@ -30,12 +30,7 @@ function index() {
       deathDate: "",
        imgsource:FR_SAM
     },
-    {
-      name: "أبونا القس فليمون محروس موريس",
-      birthDate: "3 مارس 2009 م.",
-      deathDate: "",
-       imgsource:""
-    },
+   
     {
       name: "أبونا القس ميخائيل فوزي توفيق",
       birthDate: "3 مارس 2009 م.",
@@ -64,7 +59,12 @@ function index() {
       birthDate: "17 فبراير 2023 م.",
       deathDate: "",
        imgsource:FR_MINA
-    }, 
+    },  {
+      name: "أبونا القس فليمون محروس موريس",
+      birthDate: "3 مارس 2009 م.",
+      deathDate: "",
+       imgsource:""
+    },
   ];
 
   return (
@@ -79,15 +79,15 @@ function index() {
           {fathersOfTheChurch.map((father) => (
             <div
               key={father?.name} style={{ borderRight: '3px solid #894242ff', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}
-              className="bg-[#ffffff12] shadow-xl   overflow-hidden p-5 border border-[transparent]  transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]  grid grid-cols-[3fr_1fr] gap-5  "
+              className="bg-[#ffffff12] shadow-xl   overflow-hidden p-4 border border-[transparent]  transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]  grid grid-cols-[3fr_1fr] gap-3  "
             >
               <div className=' '>
-              <h3 className="  font-semibold text-gray-800 text-right">{father.name}</h3>
-              <p className="  text-gray-600 mt-2 text-right">
+              <h3 className=" text-sm md:text-lg font-semibold text-gray-800 text-right">{father.name}</h3>
+              <p className=" text-sm md:text-lg text-gray-600 mt-2 text-right">
                 <strong>تمت الرسامة : </strong> {father.birthDate}
               </p>
               {father.deathDate && (
-                <p className="  text-gray-600 mt-2 text-right">
+                <p className=" text-sm md:text-lg text-gray-600 mt-2 text-right">
                   <strong>و صار قمصا بعام :</strong> {father.deathDate}
                 </p>
               )}
