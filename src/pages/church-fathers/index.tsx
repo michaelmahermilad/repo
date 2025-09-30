@@ -100,10 +100,11 @@ function index() {
           ))}
         </div>
 
-<iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" className='w-[100%] h-[100vh]' ></iframe>
 
                          
       </div>
+      <iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" className='w-[100%] h-[100vh] flex justify-content m-auto' ></iframe>
+
     </div>
   )
 }
