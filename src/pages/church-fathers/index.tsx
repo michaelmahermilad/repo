@@ -100,7 +100,7 @@ function index() {
           ))}
         </div>
 
-<iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" style={{ border: "1px solid lightgray", width: "99%",margin:"auto", height:"99vh" }} ></iframe>
+<iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" className='w-[100%] h-[100vh]' ></iframe>
 
                          
       </div>
