@@ -75,19 +75,19 @@ function index() {
       <Image src={anba_athanasius} width={200}alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
       <p className='text-center text-[19px] font-bold lg:text-[20px] my-7'>  الاباء الرعاة للكنيسة </p>
       <div className="container mx-auto px-6 py-6 text-right ">
-        <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8 pb-9  ">
+        <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8 pb-9 mb-10 ">
           {fathersOfTheChurch.map((father) => (
             <div
               key={father?.name} style={{ borderRight: '3px solid #894242ff', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}
-              className="bg-[#ffffff12] shadow-xl   overflow-hidden p-4 border border-[transparent]  transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]  grid grid-cols-[3fr_1fr] gap-3  "
+              className="mb-4 bg-[#ffffff12] shadow-xl   overflow-hidden p-6 border border-[transparent]  transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-[transparent]  grid grid-cols-[3fr_1fr] gap-4  "
             >
               <div className=' '>
-              <h3 className=" text-sm md:text-lg font-semibold text-gray-800 text-right">{father.name}</h3>
-              <p className=" text-sm md:text-lg text-gray-600 mt-2 text-right">
+              <h3 className=" text-sm lg:text-lg font-semibold text-gray-800 text-right">{father.name}</h3>
+              <p className=" text-sm lg:text-lg text-gray-600 mt-2 text-right">
                 <strong>تمت الرسامة : </strong> {father.birthDate}
               </p>
               {father.deathDate && (
-                <p className=" text-sm md:text-lg text-gray-600 mt-2 text-right">
+                <p className=" text-sm lg:text-lg text-gray-600 mt-2 text-right">
                   <strong>و صار قمصا بعام :</strong> {father.deathDate}
                 </p>
               )}
