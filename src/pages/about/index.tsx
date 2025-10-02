@@ -18,7 +18,7 @@ import image from '../../../public/image.jpg'
               <div className='rounded-xl shadow p-6 space-y-4 border border-dashed h-fit  mb-5    border-gray-300 bg-white/30 opacity-77 backdrop-blur-sm>'>
 
             
-          <h1 className="  font-bold  text-[brown] text-[18px]">💬 الملاك ميخائيل شفيع كنيستنا</h1>
+          <h1 className="  font-bold  text-[#7E1215] text-[17px]">الملاك ميخائيل شفيع كنيستنا</h1>
           <p className="   ">
             الملاك ميخائيل هو قائد جيش السماء. قوي وشجاع، ويدافع عن أولاد الله.
             في يوم من الأيام، حاول الشيطان أن يتمرد على الله، لكن الملاك ميخائيل وقف وقال:

@@ -165,8 +165,8 @@ const NavbarRed: React.FC = () => {
       </div>
 
       <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => (
+        <div className="  px-2 pt-2  px- 3 text-right">
+          {navigation.toReversed().map((item) => (
             <DisclosureButton
               key={item.name}
               as="a"
@@ -174,7 +174,7 @@ const NavbarRed: React.FC = () => {
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
                       item.current ? 'bg-[#eeebca] text-[#7e1215]' : 'text-white hover:bg-[#eeebca36] hover:text-white',
-                'block rounded-[10px] px-2 py-1 my-[20px] text-base font-medium',
+                'block rounded-[10px] px-3 py-3 my-[20px] text-base font-medium',
               )}
             >
               {item.name}
