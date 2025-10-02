@@ -7,13 +7,17 @@ import image from '../../../public/image.jpg'
     <div>
 
  
-      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 mx-auto p-5 lg:p-10 pb-20 text-right ">
+      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 mx-auto p-5 lg:p-10 pb-10 text-right ">
+         <div className="flex flex-col-reverse lg:flex-col lg:contents gap-6">
                 <Image  style={{
             filter: 'brightness(0.85) contrast(1.1) sepia(0.15)  ', // Added filters
-          }} src={pray}  alt="About Us" className="w-full h-auto rounded-lg shadow-lg mix-blend-multiply" />
+          }} src={pray}  alt="About Us" className="w-[50vw] m-auto  lg:w-full h-auto rounded-lg shadow-lg mix-blend-multiply" />
 
 
-              <section className="rounded-xl shadow p-6 space-y-4 border border-dashed border-gray-300 bg-white/30 opacity-77 backdrop-blur-sm">
+              <section className="">
+              <div className='rounded-xl shadow p-6 space-y-4 border border-dashed h-fit  mb-5    border-gray-300 bg-white/30 opacity-77 backdrop-blur-sm>'>
+
+            
           <h1 className="  font-bold  text-[brown] text-[18px]">💬 الملاك ميخائيل شفيع كنيستنا</h1>
           <p className="   ">
             الملاك ميخائيل هو قائد جيش السماء. قوي وشجاع، ويدافع عن أولاد الله.
@@ -38,24 +42,25 @@ import image from '../../../public/image.jpg'
             <li><strong>يسند الشهداء: </strong> يقويهم في العذاب، ويحمي الكنيسة دائمًا.</li>
           </ul>
       
-
+  </div>
       
  
        
-
-    
-
-            <blockquote className="bg-yellow-50 border-r-4 border-yellow-400 p-4 rounded shadow-sm">
+  <blockquote className="bg-yellow-50 border-r-4 border-yellow-400 p-4 rounded shadow-sm">
             <p className="text-gray-800 font-medium leading-relaxed">
               "إِلهُ الرَّجَاءِ يُمَلَأُكُمْ كُلَّ سُرُورٍ وَسَلاَمٍ فِي الإِيمَانِ، لِتَزْدَادُوا فِي الرَّجَاءِ بِقُوَّةِ الرُّوحِ الْقُدُسِ."
             </p>
             <span className="block mt-2 text-sm text-yellow-700"> الصفحة لا تزال قيد الانشاء</span>
           </blockquote>
+    
+
+          
         </section>
+        
            </div>
  
     
-
+</div>
 
       
 
