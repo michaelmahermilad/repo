@@ -83,8 +83,33 @@ useEffect(() => {
     
 </div>
 
-      
+    <div className="max-w-2xl mx-auto p-4 bg-white shadow-md rounded-lg my-10">
+      <iframe
+        title="SoundCloud Player"
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameBorder="no"
+        allow="autoplay"
+        
+        className="rounded-md"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A249282744&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
 
+      <div className="mt-2 text-xs text-gray-500 truncate font-light">
+        <strong>Listen to :</strong>
+        ·{" "}
+        <a
+          href="https://soundcloud.com/george-wasfy-3/knisty-knisty-koogi-tv"
+          title="ترنيمة كنيستى كنيستى - قناة كوجى - Knisty Knisty Koogi TV"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          ترنيمة كنيستى كنيستى - قناة كوجى - Knisty Knisty Koogi TV
+        </a>
+      </div>
+    </div>
     </div>
   );
 }
