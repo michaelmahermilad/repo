@@ -35,3 +35,27 @@ min-height: 100vh;
   width: 100%;
   margin: auto; /* Smaller logo on sticky header */
 }
+
+    .ticker-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: slideIn 10s linear infinite;
+      font-size: 18px;
+      color: #333;
+    }
+
+   
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+    animation: fadeInUp  1s ease-in-out ;
+ 
+}

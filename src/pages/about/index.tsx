@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
 import pray from './pray.jpg'
-import image from '../../../public/image.jpg'
  export default function About() {
+  const phrases = [
+  "وَلْيَمْلَأْكُمْ إِلَهُ الرَّجَاءِ كُلَّ سُرُورٍ وَسَلاَمٍ فِي الإِيمَانِ، لِتَزْدَادُوا فِي الرَّجَاءِ بِقُوَّةِ الرُّوحِ الْقُدُسِ. ",
+  "أَيْضًا إِذَا سِرْتُ فِي وَادِي ظِلِّ الْمَوْتِ لاَ أَخَافُ شَرًّا، لأَنَّكَ أَنْتَ مَعِي.",
+  "سَلاَمًا أَتْرُكُ لَكُمْ. سَلاَمِي أُعْطِيكُمْ. لَيْسَ كَمَا يُعْطِي الْعَالَمُ أُعْطِيكُمْ أَنَا. ",
+  ' عِيشُوا بِالسَّلاَمِ، وَإِلهُ الْمَحَبَّةِ وَالسَّلاَمِ سَيَكُونُ مَعَكُمْ." ',
+  "وَسَلاَمُ ٱللهِ ٱلَّذِي يَفُوقُ كُلَّ عَقْلٍ، يَحْفَظُ قُلُوبَكُمْ وَأَفْكَارَكُمْ فِي ٱلْمَسِيحِ يَسُوعَ. "
+];
+    const [quote, setQuote] = useState(phrases[0]);
+  const [animate, setAnimate] = useState(false);
+useEffect(() => {
+    const interval = setInterval(() => {
+      const random = Math.floor(Math.random() * phrases.length);
+      setQuote(phrases[random]);
+
+      // Retrigger animation
+      setAnimate(false);
+      requestAnimationFrame(() => {
+        setAnimate(true);
+      });
+    }, 25000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div>
 
@@ -47,9 +69,8 @@ import image from '../../../public/image.jpg'
  
        
   <blockquote className="bg-yellow-50 border-r-4 border-yellow-400 p-4 rounded shadow-sm">
-            <p className="text-gray-800 font-medium leading-relaxed">
-              "إِلهُ الرَّجَاءِ يُمَلَأُكُمْ كُلَّ سُرُورٍ وَسَلاَمٍ فِي الإِيمَانِ، لِتَزْدَادُوا فِي الرَّجَاءِ بِقُوَّةِ الرُّوحِ الْقُدُسِ."
-            </p>
+            <p className={`${animate ? 'animate-fadeInUp' : ''}  text-gray-800 font-medium leading-relaxed`}>
+  {quote}            </p>
             <span className="block mt-2 text-sm text-yellow-700"> الصفحة لا تزال قيد الانشاء</span>
           </blockquote>
     
