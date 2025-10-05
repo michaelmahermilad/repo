@@ -18,25 +18,7 @@ function index() {
       deathDate: "20 فبراير 1987 م.",
       imgsource:FR_MARK
     },
-    {
-      name: "أبونا المتنيح القمص بيشوي عوض",
-      birthDate: "10 مارس 1974 م.",
-      deathDate: "15 يوليو 1994 م.",
-       imgsource:FR_AWAD
-    },
-    {
-      name: "أبونا القس صموئيل صموئيل تاوضروس",
-      birthDate: "3 مارس 2009 م.",
-      deathDate: "",
-       imgsource:FR_SAM
-    },
    
-    {
-      name: "أبونا القس ميخائيل فوزي توفيق",
-      birthDate: "3 مارس 2009 م.",
-      deathDate: "",
-       imgsource:FR_MIKHA
-    },
     {
       name: "أبونا القمص لوقا لبيب شحاتة",
       birthDate: "29 مايو 1988 م.",
@@ -44,28 +26,54 @@ function index() {
        imgsource:FR_LUKA
     },
     {
-      name: "أبونا القس أثناسيوس عوض",
-      birthDate: "28 يونيو 2018 م.",
+      name: "أبونا القس صموئيل صموئيل تاوضروس",
+      birthDate: "3 مارس 2009 م.",
       deathDate: "",
-       imgsource:FR_ATHA
+       imgsource:FR_SAM
     },
-      {
-      name: "أبونا القس بيشوي زاهر عبد المسيح ",
-      birthDate: "17 فبراير 2023 م.",
-      deathDate: "",
-       imgsource:FR_BISHOY
-    }, {
-      name: "أبونا القس مينا اديب ",
-      birthDate: "17 فبراير 2023 م.",
-      deathDate: "",
-       imgsource:FR_MINA
-    },  {
+    {
       name: "أبونا القس فليمون محروس موريس",
       birthDate: "3 مارس 2009 م.",
       deathDate: "",
        imgsource:""
     },
+    {
+      name: "أبونا القس ميخائيل فوزي توفيق",
+      birthDate: "3 مارس 2009 م.",
+      deathDate: "",
+       imgsource:FR_MIKHA
+    },
+    {
+      name: "أبونا القس أثناسيوس عوض",
+      birthDate: "28 يونيو 2018 م.",
+      deathDate: "",
+       imgsource:FR_ATHA
+    },{
+      name: "أبونا القس مينا اديب ",
+      birthDate: "17 فبراير 2023 م.",
+      deathDate: "",
+       imgsource:FR_MINA
+    }, 
+      {
+      name: "أبونا القس بيشوي زاهر  ",
+      birthDate: "17 فبراير 2023 م.",
+      deathDate: "",
+       imgsource:FR_BISHOY
+    }, 
   ];
+
+  const fathers=[ {
+      name: "أبونا المتنيح القمص بيشوي عوض",
+      birthDate: "10 مارس 1974 م.",
+      deathDate: "15 يوليو 1994 م.",
+       imgsource:FR_AWAD
+    },
+  {
+      name: "أبونا المتنيح القمص  مينا اسكندر",
+  
+    },
+  
+  ]
 
   return (
     <div>
@@ -73,6 +81,9 @@ function index() {
 
       
       <Image src={anba_athanasius} width={200}alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
+    
+
+
       <p className='text-center text-[19px] font-bold lg:text-[20px] my-7'>  الاباء الرعاة للكنيسة </p>
       <div className="container mx-auto px-8 py-6 text-right ">
         <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 pb-7 mb-7 ">
@@ -103,7 +114,36 @@ function index() {
 
                          
       </div>
+  <p className='text-center text-[19px] font-bold lg:text-[20px] my-7'>  اباء الكنيسة المنتقلين </p>
+ <div className="container mx-auto px-8 py-6 text-right ">
+        <div dir="rtl" className="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 pb-7 mb-7 ">
+          {fathers.map((father) => (
+            <div
+              key={father?.name} style={{ borderRight: '3px solid #894242ff', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}
+              className="mb-4 bg-[#ffffff12] shadow-xl   overflow-hidden p-3 lg:p-4 pr-6 border border-[transparent]  transition-all duration-300 transform hover:scale-103 hover:shadow-xl hover:bg-[transparent]  grid grid-cols-[3fr_1fr] gap-4  "
+            >
+              <div className=' '>
+              <h3 className=" text-sm   font-semibold text-gray-800 text-right">{father.name}</h3>
+              <p className=" text-sm   text-gray-600 mt-2 text-right">
+               {father.birthDate && <strong>تمت الرسامة : </strong>}  {father.birthDate}
+              </p>
+              {father.deathDate && (
+                <p className=" text-sm   text-gray-600 mt-2 text-right">
+                  <strong>و صار قمصا بعام :</strong> {father.deathDate}
+                </p>
+              )}
+              </div>
+              {father?.imgsource && (
+      <Image src={father.imgsource} width={100}alt='M' className='m-auto w-full   rounded-lg  ' />
+              )}
+            </div>
 
+          ))}
+        </div>
+
+
+                         
+      </div>
     </div>
   )
 }
