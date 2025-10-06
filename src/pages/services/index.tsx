@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import icon from './icon.gif'
+import BankCard from '@/Components/BankCard';
 function index() {
   return (
     <>
@@ -77,7 +78,7 @@ function index() {
 
         </div>
       </div>
-
+<BankCard/>
       <iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" className='w-[100%] h-[100vh] flex justify-content m-auto' ></iframe>
 
     </>)

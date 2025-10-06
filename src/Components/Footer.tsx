@@ -1,6 +1,7 @@
  import Image from 'next/image'
 import React from 'react'
 import image from '../../public/image.jpg'
+import BankCard from './BankCard'
 function Footer() {
   return (<>
 
