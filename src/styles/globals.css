@@ -10,7 +10,10 @@ body{
   background-attachment: fixed; /* This keeps the background fixed */
 min-height: 100vh;
 }
-
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 .headerMain {
   /* Default styles */
   transition: background-color 0.3s ease, padding 0.3s ease; /* For smooth changes */
@@ -21,7 +24,7 @@ min-height: 100vh;
   top: 0;
   width: 100%;
   background-color: #222; /* Darker background on scroll */
-  padding: 10px 0;
+  padding: unset 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
 }
 
@@ -59,3 +62,4 @@ min-height: 100vh;
     animation: fadeInUp  1s ease-in-out ;
  
 }
+

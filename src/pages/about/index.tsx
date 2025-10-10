@@ -29,7 +29,7 @@ useEffect(() => {
     <div>
 
  
-      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 mx-auto p-5 lg:p-10 pb-10 text-right ">
+      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 mx-auto p-5 lg:p-6 pb-8 text-right ">
          <div className="flex flex-col-reverse lg:flex-col lg:contents gap-6">
                 <Image  style={{
             filter: 'brightness(0.85) contrast(1.1) sepia(0.15)  ', // Added filters

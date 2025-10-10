@@ -57,9 +57,8 @@ const NavbarRed: React.FC = () => {
 
     return (
  
-           <Disclosure as="nav" style={{position:"sticky",top:0, backgroundColor: '#7E1215', paddingInline: '.3rem' ,paddingBlock:"1rem", zIndex:10000,                boxShadow: '3px 7px 10px rgba(0, 0, 0, 0.11)' // Added light shadow
-}} className='w-full headerMain
-    '>
+           <Disclosure as="nav" style={{position:"sticky",top:0, backgroundColor: '#7E1215', paddingInline: '.3rem' , zIndex:10000,                boxShadow: '3px 7px 10px rgba(0, 0, 0, 0.11)' // Added light shadow
+}} className='w-full pt-1 pb-1 md:pt-4 md:pb-4 headerMain '>
        <Head>
         <title>{pageTitle} | موقع كنيسة السيدة العذراء</title>
             

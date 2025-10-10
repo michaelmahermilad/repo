@@ -9,7 +9,7 @@ import FR_MINA from './FR_MINA.png'
  import FR_AWAD from './FR_AWAD.png'
  import FR_LUKA from './FR_LUKA.png'
  import FR_ATHA from './FR_ATHA.png'
-function index() {
+ function index() {
   const fathersOfTheChurch = [
  
     {
@@ -144,6 +144,8 @@ function index() {
 
                          
       </div>
+
+
     </div>
   )
 }
