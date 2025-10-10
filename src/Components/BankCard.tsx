@@ -4,7 +4,7 @@ import bankm from './bank misr.jpg'
 function BankCard() {
   return (
 
-    <div dir='rtl' className='flex flex-wrap flex-row  justify-center items-center my-10 '>
+    <div dir='rtl' className='flex flex-wrap flex-row  justify-center items-center my-30 '>
     <div className=' w-[90%] lg:w-[30%] m-auto   rounded-sm   bg-[white] shadow-xl   overflow-hidden    '>
         <p className='text-center  text-xl   text-white bg-[brown] px-3 py-3'> شارك معنا بالخدمة </p>
 
