@@ -14,7 +14,7 @@ function Navbar() {
   return (
 <div style={{overflow:'hidden'}} className="px-[10px] lg:px-[10px]  lg:px-[25px]  w-full flex justify-between items-center py-1  " >
     {!loaded && (
-        <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-white via-[white] to-gray-50 z-100000" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[white] via-[white] to-[white] z-100000" />
       )}
          <Image src={y} alt='M' width={100} className='w-[90px]  lg:w-[170px] mb-[-26px]'        
  />
