@@ -63,3 +63,17 @@ min-height: 100vh;
  
 }
 
+ ::-webkit-scrollbar{
+        width: 6px;
+        border-radius: 10px;
+     }
+    ::-webkit-scrollbar-track{
+        background: rgb(51, 3, 3);
+    }
+    ::-webkit-scrollbar-thumb{ 
+        background: rgb(140, 40, 40);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover{ 
+        background: rgba(241, 129, 129, 0);
+    }

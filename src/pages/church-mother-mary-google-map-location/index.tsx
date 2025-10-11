@@ -11,7 +11,7 @@ function index() {
   return  (<>
         <p className='text-center text-[20px] lg:text-[21px] font-bold  my-7'>الموقع الجغرافي للكنيسة</p>
 
-        <Image src={icon} alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
+        <Image src={icon} alt='M' className='m-auto w-[130px] lg:w-[180px]   ' loading="lazy"/>
 
        <p className='text-center text-[18px] lg:text-[18px] my-9'>:يمكنك زيارة الكنيسة في العنوان التالي</p>
       <p className='text-center text-[16px] lg:text-[18px] my-8'>مصر - القاهرة - حدائق القبة  -المليحة  -شارع الكنيسة</p>

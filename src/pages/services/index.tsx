@@ -7,7 +7,7 @@ function index() {
     <>
       <div>
 
-         <Image src={icon} alt='M' className='m-auto w-[130px] lg:w-[180px]  mt-6 ' />
+         <Image src={icon} alt='M' className='m-auto w-[130px] lg:w-[180px]  mt-6 ' loading="lazy"/>
         <p className='text-center text-lg     text-shadow-sm my-10 '>انضموا إلينا في صلاة القداس الالهي   </p>
         <div dir='rtl' className=" ">
           <section className="container mx-auto my-10 px-6 ">

@@ -12,7 +12,7 @@ function BankCard() {
 <div className="border-l-1 px-3 py-3   border-gray-200">
     
 
-    <Image src={bankm} width={200} alt='Bank Misr' className='w-full' />
+    <Image src={bankm} width={200} alt='Bank Misr' className='w-full' loading="lazy"/>
 </div>
 
 <div className=" grid grid-rows-3 px-3 py-3 gap-1">

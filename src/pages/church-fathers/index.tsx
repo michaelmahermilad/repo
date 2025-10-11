@@ -80,7 +80,7 @@ import FR_MINA from './FR_MINA.png'
       <p className='text-center text-[16px] lg:text-[18px] my-10 mt-6 '>برعاية الانبا اثانسيوس - اسقف عام كنائس القبة</p>
 
       
-      <Image src={anba_athanasius} width={200}alt='M' className='m-auto w-[130px] lg:w-[180px]   ' />
+      <Image src={anba_athanasius} width={200}alt='M' className='m-auto w-[130px] lg:w-[180px]   ' loading="lazy"/>
     
 
 
@@ -134,7 +134,7 @@ import FR_MINA from './FR_MINA.png'
               )}
               </div>
               {father?.imgsource && (
-      <Image src={father.imgsource} width={100}alt='M' className='m-auto w-full   rounded-lg  ' />
+      <Image src={father.imgsource} width={100}alt='M' className='m-auto w-full   rounded-lg  ' loading="lazy"/>
               )}
             </div>
 
