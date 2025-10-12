@@ -18,7 +18,7 @@ function Navbar() {
       {/* Crosses (decorative, low-opacity) */}
       <div className="  backdrop-blur-[200px]        w-[90vw]     rounded-md   m-auto  flex flex-wrap justify-center items-center space-x-2 opacity-100 text-4xl text-gray-400 ">
          <div className="  pt-[60px]     text-[brown] text-[160px] text-outline text-center">    ♱  
- <p className=' pb-[100px]        text-[brown]  text-[23px] text-center '   >
+ <p className=' pb-[100px]         text-[brown]  text-[24px] text-center '   >
 Loading ...    </p>
 
 </div>
