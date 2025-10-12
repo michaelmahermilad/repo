@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
 <div style={{overflow:'hidden'}} className="px-[10px] lg:px-[10px]  lg:px-[25px]  w-full flex justify-between items-center py-1 pointer-events-none " >
-    {loaded && (
+    {!loaded && (
  <div className="fixed inset-0 h-[100vh]   backdrop-blur-[200px]     z-100000 pointer-events-none">
       {/* Crosses (decorative, low-opacity) */}
       <div className="  backdrop-blur-[200px]        w-[90vw]     rounded-md   m-auto  flex flex-wrap justify-center items-center space-x-2 opacity-100 text-4xl text-gray-400 ">
