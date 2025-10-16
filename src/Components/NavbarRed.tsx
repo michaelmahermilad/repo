@@ -105,7 +105,7 @@ const NavbarRed: React.FC = () => {
 
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 ">
             <div >
-                <p className='hidden lg:block text-base   text-[white] mx-2 text-[18px] '   >
+                <p className='hidden lg:block text-base   text-[white] mx-2 text-[18px]  '   >
 .مَا أَحْلَى مَسَاكِنَكَ يَا رَبَّ الْجُنُودِ. تَشْتَاقُ نَفْسِي إِلَى دِيَارِ الرَّبّ     </p>
             </div>
             <button
@@ -163,7 +163,7 @@ const NavbarRed: React.FC = () => {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:hidden ">
         <div className="  px-2 pt-2  px- 3 text-right">
           {navigation.toReversed().map((item) => (
             <DisclosureButton

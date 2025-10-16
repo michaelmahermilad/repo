@@ -59,7 +59,7 @@ useEffect(() => {
           </p>
   <ul className="list-disc pr-6 space-y-2">
             <li><strong>قائد جيش السماء :  </strong> حارب الشيطان وطرحه إلى الأرض (رؤيا 12).</li>
-              <q style={{ textAlign: 'justify' ,marginBlock:"1rem" ,display:"block"}} >  
+              <q className=' ' style={{ textAlign: 'justify' ,marginBlock:"1rem" ,display:"block"}} >  
 وحدثت حرب في السماء: ميخائيل وملائكته حاربوا التنين، وحارب التنين وملائكته  ولم يقووا، فلم يوجد مكانهم بعد ذلك في السماء. 
 
 

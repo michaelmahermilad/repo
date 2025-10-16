@@ -12,7 +12,7 @@ function Navbar() {
     const [loaded, setLoaded] = useState(false);
 
   return (
-<div style={{overflow:'hidden'}} className="px-[10px] lg:px-[10px]  lg:px-[25px]  w-full flex justify-between items-center py-1 pointer-events-none " >
+<div style={{overflow:'hidden' }} className="px-[10px] lg:px-[10px]  lg:px-[25px]  w-full flex justify-between items-center py-1 pointer-events-none " >
     
          <Image src={y} alt='M' width={100} className='w-[90px]  lg:w-[170px] mb-[-26px]'        
  />
@@ -21,7 +21,12 @@ function Navbar() {
       
      
 
-<Image src={banner}  width={200}alt='M' className='w-[160px] lg:w-[310px] pr-[5px] my-[20px]'  />
+<Image 
+
+style={{opacity:'.80', transform:loaded?'translateY(0px) ':' ',  filter: loaded ? 'none ' : 'blur(8px)', transition: 'all .8s ease-out'}}
+
+
+src={banner}  width={200}alt='M' className='w-[160px] lg:w-[290px] pr-[5px] my-[10px]   overflow-hidden  '  />
 <Image src={logo} width={100} alt='M' className=' w-[90px] lg:w-[180px] mb-[5px]    '  onLoad={() => setLoaded(true)} />
 
     {/*
