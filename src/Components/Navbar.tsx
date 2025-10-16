@@ -23,8 +23,7 @@ function Navbar() {
 
 <Image 
 
-style={{opacity:'.80', transform:loaded?'translateY(0px) ':' ',  filter: loaded ? 'none ' : 'blur(8px)', transition: 'all .8s ease-out'}}
-
+ 
 
 src={banner}  width={200}alt='M' className='w-[160px] lg:w-[290px] pr-[5px] my-[10px]   overflow-hidden  '  />
 <Image src={logo} width={100} alt='M' className=' w-[90px] lg:w-[180px] mb-[5px]    '  onLoad={() => setLoaded(true)} />
